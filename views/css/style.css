@@ -1,0 +1,103 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Muli";
+    src: url("http://localhost/my-site/app/assets/fonts/Muli.ttf");
+}
+
+body {
+    font-family: Muli !important;
+}
+
+.active-menu{
+    border-bottom: 1px solid!important;
+}
+
+.title-logo {
+    font-weight: 700;
+    font-size: 55px !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+}
+
+
+@media only screen and (min-width:400px) and (max-width: 992px) {
+    .container-ssd {
+        max-width: 96% !important;
+    }
+}
+
+@media only screen and (max-width:750px) {
+
+    .col-5,
+    .col-7 {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width:560px) {
+    .title-logo {
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and (min-width: 850px){
+    .container-contacts{
+        max-width: 50%!important;
+    }
+}
+
+.navbar {
+    padding: 0 3% 0 3% !important;
+    background-color: #0b0b0b!important;
+}
+
+.navbar-brand {
+    padding-top: 0 !important;
+}
+
+.nav-item {
+    padding-left: 40% !important;
+}
+
+.header-banner {
+    background-color: #0b0b0b;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form-group{
+    margin-top: 50px;
+}
+
+.col-7 img {
+    width: 100%;
+}
+
+.title-contacts{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.col-5 {
+    align-self: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.title-span {
+    font-weight: 700;
+    font-size: 60px !important;
+    color: #F5AF31;
+}
+
+.navbar-brand,
+.navbar-text,
+.nav-link {
+    color: #ffffff !important;
+}

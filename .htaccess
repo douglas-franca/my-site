@@ -1,0 +1,17 @@
+Options -Indexes
+
+<FilesMatch "\.env$">
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.htaccess$">
+    Deny from all
+</FilesMatch>
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.+)$ index.php?path=$1 [QSA,L]
